@@ -1,8 +1,6 @@
 package index
 
 import (
-	"encoding/json"
-	"fmt"
 	"github.com/gin-gonic/gin"
 	"io/ioutil"
 	"net/http"
@@ -41,12 +39,6 @@ func Index(c *gin.Context) {
 				menus = tmp
 			}
 		}
-
-		tmp, _ := json.Marshal(menus)
-
-		s := string(tmp)
-
-		fmt.Println(s)
 
 		//获取配置数据
 		sideTheme := configService.GetValueByKey("sys.index.sideTheme")
