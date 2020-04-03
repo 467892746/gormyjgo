@@ -24,8 +24,8 @@
 	[api.jwt]
 	    #过期时间
 	    timeout = 3600
-	    #token分割符
-	    Refresh = 1800
+	    #刷新时间
+	    refresh = 1800
 	    #安全密钥
 	    encryptKey = "yjgoyjgoyjgoyjgo"
 
@@ -46,7 +46,7 @@
 # 数据库配置
 [database]
     #主数据库
-    master  = "root:password@tcp(127.0.0.1:3306)/yjgov2?charset=utf8"
+    master  = "zyroot:Vz*wbxV-6GY?^PBGPcPt7E_b@tcp(127.0.0.1:3306)/yjgov2?charset=utf8"
     #从数据库 如果为空则表示只使用主数据
     slave = ""
     #sql调试开关

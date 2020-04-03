@@ -4,6 +4,7 @@
     <list default="true" id="12d02c41-66a1-4095-aa20-072f03dc053f" name="Default Changelist" comment="1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vm/go/extend.txt" beforeDir="false" afterPath="$PROJECT_DIR$/template/vm/go/extend.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,18 +108,21 @@
     <MESSAGE value="1" />
     <MESSAGE value="增加代码生成 float字段" />
     <MESSAGE value="修改bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改bug" />
+    <MESSAGE value="修改session保存的bug" />
+    <MESSAGE value="生成代码支持double" />
+    <MESSAGE value="调整代码生成模板model" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整代码生成模板model" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
     <proxy>direct</proxy>
   </component>
   <component name="WindowStateProjectService">
-    <state x="856" y="90" key="CommitChangelistDialog2" timestamp="1585894460762">
+    <state x="856" y="90" key="CommitChangelistDialog2" timestamp="1585907091952">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="314" y="50" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1585318381077" />
-    <state x="856" y="90" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1585894460762" />
+    <state x="856" y="90" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1585907091952" />
     <state x="419" y="60" key="CommitChangelistDialog2/1920.117.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1585483826200" />
     <state width="857" height="466" key="DebuggerActiveHint" timestamp="1585400582579">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -176,11 +180,11 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="469" y="179" key="SettingsEditor/1920.117.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1585464593036" />
-    <state x="427" y="228" key="Vcs.Push.Dialog.v2" timestamp="1585894469698">
+    <state x="427" y="228" key="Vcs.Push.Dialog.v2" timestamp="1585906804322">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1585318389639" />
-    <state x="427" y="228" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1585894469698" />
+    <state x="427" y="228" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1585906804322" />
     <state x="427" y="228" key="Vcs.Push.Dialog.v2/1920.117.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1585483842404" />
     <state width="960" height="540" key="XDebugger.FullValuePopup" timestamp="1585400799702">
       <screen x="0" y="0" width="1920" height="1080" />
