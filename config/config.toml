@@ -46,7 +46,7 @@
 # 数据库配置
 [database]
     #主数据库
-    master  = "zyroot:Vz*wbxV-6GY?^PBGPcPt7E_b@tcp(127.0.0.1:3306)/yjgov2?charset=utf8"
+    master  = "root:password@tcp(127.0.0.1:3306)/yjgov2?charset=utf8"
     #从数据库 如果为空则表示只使用主数据
     slave = ""
     #sql调试开关
