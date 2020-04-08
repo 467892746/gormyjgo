@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12d02c41-66a1-4095-aa20-072f03dc053f" name="Default Changelist" comment="修改">
+    <list default="true" id="12d02c41-66a1-4095-aa20-072f03dc053f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controller/system/config/config_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/system/config/config_controller.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/vm/go/controller.txt" beforeDir="false" afterPath="$PROJECT_DIR$/template/vm/go/controller.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/demo/form/autocomplete.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/demo/form/autocomplete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/demo/form/datetime.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/demo/form/datetime.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/demo/form/duallistbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/demo/form/duallistbox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/demo/form/jasny.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/demo/form/jasny.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/demo/form/select.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/demo/form/select.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/demo/form/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/demo/form/upload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/demo/form/validate.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/demo/form/validate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/demo/modal/layer.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/demo/modal/layer.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,18 +122,21 @@
     <MESSAGE value="去掉endless" />
     <MESSAGE value="修改list生成模板" />
     <MESSAGE value="修正修改密码页面bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="修正修改密码页面bug" />
+    <MESSAGE value="修正导出excel模板" />
+    <MESSAGE value="菜单管理增加排序" />
+    <MESSAGE value="修复代码生成模板非空" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复代码生成模板非空" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
     <proxy>direct</proxy>
   </component>
   <component name="WindowStateProjectService">
-    <state x="314" y="50" key="CommitChangelistDialog2" timestamp="1585988574024">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="856" y="90" key="CommitChangelistDialog2" timestamp="1586329256100">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="314" y="50" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1585988574024" />
-    <state x="856" y="90" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1585982444408" />
+    <state x="314" y="50" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1585997242412" />
+    <state x="856" y="90" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1586329256100" />
     <state x="419" y="60" key="CommitChangelistDialog2/1920.117.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1585483826200" />
     <state width="857" height="466" key="DebuggerActiveHint" timestamp="1585400582579">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -185,20 +194,20 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="469" y="179" key="SettingsEditor/1920.117.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1585464593036" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1585988591865">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="427" y="228" key="Vcs.Push.Dialog.v2" timestamp="1586329262293">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1585988591865" />
-    <state x="427" y="228" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1585982451444" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1585997249264" />
+    <state x="427" y="228" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1586329262293" />
     <state x="427" y="228" key="Vcs.Push.Dialog.v2/1920.117.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1585483842404" />
     <state width="960" height="540" key="XDebugger.FullValuePopup" timestamp="1585400799702">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="960" height="540" key="XDebugger.FullValuePopup/0.0.1920.1080@0.0.1920.1080" timestamp="1585400799702" />
-    <state x="988" y="594" width="669" height="486" key="find.popup" timestamp="1585470549704">
+    <state x="988" y="594" width="669" height="486" key="find.popup" timestamp="1586332230844">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="988" y="594" width="669" height="486" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1585400303300" />
+    <state x="988" y="594" width="669" height="486" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1586332230844" />
     <state x="988" y="594" width="669" height="486" key="find.popup/1920.117.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1585470549704" />
     <state x="680" y="338" key="git4idea.merge.GitPullDialog" timestamp="1585885833568">
       <screen x="0" y="0" width="1920" height="1080" />
