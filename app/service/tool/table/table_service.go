@@ -323,9 +323,17 @@ func InitColumnField(column *tableColumnModel.Entity, table *tableModel.Entity) 
 		column.HtmlType = "input"
 		// 如果是浮点型
 		tmp := column.ColumnType
-		if tmp == "float" || tmp == "double" {
+		switch tmp {
+		case "bigint unsigned":
+			column.ColumnType = "bigint"
+			column.GoType = "uint64"
+		case "float", "double":
 			column.GoType = "float64"
-		} else {
+		case "bigint":
+			column.GoType = "int64"
+		case "int":
+			column.GoType = "int"
+		default:
 			start := strings.Index(tmp, "(")
 			end := strings.Index(tmp, ")")
 			result := tmp[start+1 : end]

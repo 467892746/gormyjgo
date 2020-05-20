@@ -58,11 +58,11 @@ func SelectListByPage(param *SelectPageReq) ([]Entity, *page.Paging, error) {
 		}
 		{{end}} {{end}} {{end}} {{end}}
 		if param.BeginTime != "" {
-			model.Where("date_format(t.create_time,'%y%m%d') >= date_format(?,'%y%m%d') ", param.BeginTime)
+			model.Where("date_format(t.created_at,'%y%m%d') >= date_format(?,'%y%m%d') ", param.BeginTime)
 		}
 
 		if param.EndTime != "" {
-			 model.Where("date_format(t.create_time,'%y%m%d') <= date_format(?,'%y%m%d') ", param.EndTime)
+			 model.Where("date_format(t.created_at,'%y%m%d') <= date_format(?,'%y%m%d') ", param.EndTime)
 		}
 	}
 
@@ -75,7 +75,7 @@ func SelectListByPage(param *SelectPageReq) ([]Entity, *page.Paging, error) {
 
 	p = page.CreatePaging(param.PageNum, param.PageSize, int(total))
 
-	model.Limit(p.Pagesize, p.StartNum)
+	model.OrderBy("id desc").Limit(p.Pagesize, p.StartNum)
 
 	var result []Entity
     err = model.Find(&result)
@@ -105,11 +105,11 @@ func SelectListExport(param *SelectPageReq, head, col []string) (string, error) 
 		}
 		{{end}} {{end}} {{end}} {{end}}
 		if param.BeginTime != "" {
-			build.Where(builder.Gte{"date_format(t.create_time,'%y%m%d')": "date_format('" + param.BeginTime + "','%y%m%d')"})
+			build.Where(builder.Gte{"date_format(t.created_at,'%y%m%d')": "date_format('" + param.BeginTime + "','%y%m%d')"})
 		}
 
 		if param.EndTime != "" {
-			build.Where(builder.Lte{"date_format(t.create_time,'%y%m%d')": "date_format('" + param.EndTime + "','%y%m%d')"})
+			build.Where(builder.Lte{"date_format(t.created_at,'%y%m%d')": "date_format('" + param.EndTime + "','%y%m%d')"})
 		}
 	}
 
@@ -144,11 +144,11 @@ func SelectListAll(param *SelectPageReq) ([]Entity, error) {
 		}{{end}}
 		{{end}} {{end}} {{end}}
 		if param.BeginTime != "" {
-			model.Where("date_format(t.create_time,'%y%m%d') >= date_format(?,'%y%m%d') ", param.BeginTime)
+			model.Where("date_format(t.created_at,'%y%m%d') >= date_format(?,'%y%m%d') ", param.BeginTime)
 		}
 
 		if param.EndTime != "" {
-			model.Where("date_format(t.create_time,'%y%m%d') <= date_format(?,'%y%m%d') ", param.EndTime)
+			model.Where("date_format(t.created_at,'%y%m%d') <= date_format(?,'%y%m%d') ", param.EndTime)
 		}
 	}
 
